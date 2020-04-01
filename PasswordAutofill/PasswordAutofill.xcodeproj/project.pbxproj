@@ -15,6 +15,12 @@
 		DB27F6CC24350CED003F32F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB27F6CA24350CED003F32F4 /* LaunchScreen.storyboard */; };
 		DB27F6D724350CEE003F32F4 /* PasswordAutofillTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27F6D624350CEE003F32F4 /* PasswordAutofillTests.swift */; };
 		DB27F6E224350CEE003F32F4 /* PasswordAutofillUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27F6E124350CEE003F32F4 /* PasswordAutofillUITests.swift */; };
+		DB27F6F52435274B003F32F4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27F6EF2435274B003F32F4 /* HomeViewController.swift */; };
+		DB27F6F62435274B003F32F4 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27F6F02435274B003F32F4 /* ChangePasswordViewController.swift */; };
+		DB27F6F72435274B003F32F4 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27F6F12435274B003F32F4 /* OTPViewController.swift */; };
+		DB27F6F82435274B003F32F4 /* UserDefaultExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27F6F22435274B003F32F4 /* UserDefaultExtension.swift */; };
+		DB27F6F92435274B003F32F4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27F6F32435274B003F32F4 /* SignUpViewController.swift */; };
+		DB27F6FA2435274B003F32F4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27F6F42435274B003F32F4 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		DB27F6DD24350CEE003F32F4 /* PasswordAutofillUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordAutofillUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB27F6E124350CEE003F32F4 /* PasswordAutofillUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordAutofillUITests.swift; sourceTree = "<group>"; };
 		DB27F6E324350CEE003F32F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB27F6EF2435274B003F32F4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DB27F6F02435274B003F32F4 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		DB27F6F12435274B003F32F4 /* OTPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		DB27F6F22435274B003F32F4 /* UserDefaultExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultExtension.swift; sourceTree = "<group>"; };
+		DB27F6F32435274B003F32F4 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		DB27F6F42435274B003F32F4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,12 @@
 		DB27F6BE24350CEC003F32F4 /* PasswordAutofill */ = {
 			isa = PBXGroup;
 			children = (
+				DB27F6F02435274B003F32F4 /* ChangePasswordViewController.swift */,
+				DB27F6EF2435274B003F32F4 /* HomeViewController.swift */,
+				DB27F6F42435274B003F32F4 /* LoginViewController.swift */,
+				DB27F6F12435274B003F32F4 /* OTPViewController.swift */,
+				DB27F6F32435274B003F32F4 /* SignUpViewController.swift */,
+				DB27F6F22435274B003F32F4 /* UserDefaultExtension.swift */,
 				DB27F6BF24350CEC003F32F4 /* AppDelegate.swift */,
 				DB27F6C124350CEC003F32F4 /* SceneDelegate.swift */,
 				DB27F6C324350CEC003F32F4 /* ViewController.swift */,
@@ -259,9 +277,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB27F6FA2435274B003F32F4 /* LoginViewController.swift in Sources */,
+				DB27F6F82435274B003F32F4 /* UserDefaultExtension.swift in Sources */,
+				DB27F6F72435274B003F32F4 /* OTPViewController.swift in Sources */,
+				DB27F6F92435274B003F32F4 /* SignUpViewController.swift in Sources */,
 				DB27F6C424350CEC003F32F4 /* ViewController.swift in Sources */,
 				DB27F6C024350CEC003F32F4 /* AppDelegate.swift in Sources */,
 				DB27F6C224350CEC003F32F4 /* SceneDelegate.swift in Sources */,
+				DB27F6F62435274B003F32F4 /* ChangePasswordViewController.swift in Sources */,
+				DB27F6F52435274B003F32F4 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
