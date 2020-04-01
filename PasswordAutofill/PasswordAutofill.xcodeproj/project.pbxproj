@@ -61,6 +61,7 @@
 		DB27F6F22435274B003F32F4 /* UserDefaultExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultExtension.swift; sourceTree = "<group>"; };
 		DB27F6F32435274B003F32F4 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		DB27F6F42435274B003F32F4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DB27F6FB243529B4003F32F4 /* PasswordAutofill.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = PasswordAutofill.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +112,7 @@
 		DB27F6BE24350CEC003F32F4 /* PasswordAutofill */ = {
 			isa = PBXGroup;
 			children = (
+				DB27F6FB243529B4003F32F4 /* PasswordAutofill.entitlements */,
 				DB27F6F02435274B003F32F4 /* ChangePasswordViewController.swift */,
 				DB27F6EF2435274B003F32F4 /* HomeViewController.swift */,
 				DB27F6F42435274B003F32F4 /* LoginViewController.swift */,
@@ -458,6 +460,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PasswordAutofill/PasswordAutofill.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 27LZ2522RB;
@@ -478,6 +481,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PasswordAutofill/PasswordAutofill.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 27LZ2522RB;
