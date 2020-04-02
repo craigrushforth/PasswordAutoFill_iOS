@@ -11,24 +11,39 @@ import UIKit
 class MenuViewController: UIViewController {
 
     enum MenuOption: Int, CaseIterable {
-        case simpleSignUp
-        case storyboards
+        case simpleLogin
+        case simpleSignup
+        case complexSignup
+        case simpleChangePassword
+        case complexChangePassword
 
         var displayName: String {
             switch self {
-            case .simpleSignUp:
-                return "Simple Signup (2 text fields)"
-            case .storyboards:
-                return "Storyboards"
+            case .simpleLogin:
+                return "Simple Login"
+            case .simpleSignup:
+                return "Simple Signup"
+            case .complexSignup:
+                return "Complex Signup"
+            case .simpleChangePassword:
+                return "Simple Change Password"
+            case .complexChangePassword:
+                return "Complex Change Password"
             }
         }
         
         var viewController: UIViewController {
             switch self {
-            case .simpleSignUp:
+            case .simpleLogin:
+                return SimpleLoginViewController()
+            case .simpleSignup:
                 return SimpleSignupViewController()
-            case .storyboards:
-                return UIViewController()
+            case .complexSignup:
+                return ComplexSignupViewController()
+            case .simpleChangePassword:
+                return SimpleChangePasswordViewController()
+            case .complexChangePassword:
+                return ComplexChangePasswordViewController()
             }
         }
     }
@@ -68,14 +83,6 @@ extension MenuViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let menuOption = MenuOption(rawValue: indexPath.row) else { return }
-
-        if menuOption == .storyboards {
-            let mainStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
-            let loginViewController = mainStoryboard.instantiateViewController(withIdentifier: String(describing: LoginViewController.self))
-            navigationController?.setViewControllers([loginViewController], animated: true)
-            return
-        }
-        
         
         // Present view controller specific to that menu option
         let viewController = menuOption.viewController

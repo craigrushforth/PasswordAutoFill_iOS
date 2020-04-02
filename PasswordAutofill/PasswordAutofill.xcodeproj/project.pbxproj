@@ -9,21 +9,19 @@
 /* Begin PBXBuildFile section */
 		DB27F6C024350CEC003F32F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27F6BF24350CEC003F32F4 /* AppDelegate.swift */; };
 		DB27F6C224350CEC003F32F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27F6C124350CEC003F32F4 /* SceneDelegate.swift */; };
-		DB27F6C424350CEC003F32F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27F6C324350CEC003F32F4 /* ViewController.swift */; };
-		DB27F6C724350CEC003F32F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB27F6C524350CEC003F32F4 /* Main.storyboard */; };
 		DB27F6C924350CED003F32F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB27F6C824350CED003F32F4 /* Assets.xcassets */; };
 		DB27F6CC24350CED003F32F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB27F6CA24350CED003F32F4 /* LaunchScreen.storyboard */; };
 		DB27F6D724350CEE003F32F4 /* PasswordAutofillTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27F6D624350CEE003F32F4 /* PasswordAutofillTests.swift */; };
 		DB27F6E224350CEE003F32F4 /* PasswordAutofillUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27F6E124350CEE003F32F4 /* PasswordAutofillUITests.swift */; };
-		DB27F6F52435274B003F32F4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27F6EF2435274B003F32F4 /* HomeViewController.swift */; };
-		DB27F6F62435274B003F32F4 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27F6F02435274B003F32F4 /* ChangePasswordViewController.swift */; };
-		DB27F6F72435274B003F32F4 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27F6F12435274B003F32F4 /* OTPViewController.swift */; };
-		DB27F6F82435274B003F32F4 /* UserDefaultExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27F6F22435274B003F32F4 /* UserDefaultExtension.swift */; };
-		DB27F6F92435274B003F32F4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27F6F32435274B003F32F4 /* SignUpViewController.swift */; };
-		DB27F6FA2435274B003F32F4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27F6F42435274B003F32F4 /* LoginViewController.swift */; };
 		DBC4DAB8243637C000BE5236 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC4DAB7243637C000BE5236 /* MenuViewController.swift */; };
 		DBC4DABA24363FC000BE5236 /* SimpleSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC4DAB924363FC000BE5236 /* SimpleSignupViewController.swift */; };
 		DBC4DABC24364FF100BE5236 /* CompletionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC4DABB24364FF100BE5236 /* CompletionViewController.swift */; };
+		DBC4DABE24365A4B00BE5236 /* ComplexSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC4DABD24365A4B00BE5236 /* ComplexSignupViewController.swift */; };
+		DBC4DAC22436689300BE5236 /* SimpleLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC4DABF2436689300BE5236 /* SimpleLoginViewController.swift */; };
+		DBC4DAC32436689300BE5236 /* SimpleChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC4DAC02436689300BE5236 /* SimpleChangePasswordViewController.swift */; };
+		DBC4DAC42436689300BE5236 /* ComplexChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC4DAC12436689300BE5236 /* ComplexChangePasswordViewController.swift */; };
+		DBC4DAC7243669E900BE5236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC4DAC5243669E900BE5236 /* Main.storyboard */; };
+		DBC4DAC924366FD700BE5236 /* UserDefaultExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC4DAC824366FD700BE5236 /* UserDefaultExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +45,6 @@
 		DB27F6BC24350CEC003F32F4 /* PasswordAutofill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordAutofill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB27F6BF24350CEC003F32F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB27F6C124350CEC003F32F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DB27F6C324350CEC003F32F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DB27F6C624350CEC003F32F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB27F6C824350CED003F32F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB27F6CB24350CED003F32F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB27F6CD24350CED003F32F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,16 +54,16 @@
 		DB27F6DD24350CEE003F32F4 /* PasswordAutofillUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordAutofillUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB27F6E124350CEE003F32F4 /* PasswordAutofillUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordAutofillUITests.swift; sourceTree = "<group>"; };
 		DB27F6E324350CEE003F32F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DB27F6EF2435274B003F32F4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		DB27F6F02435274B003F32F4 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
-		DB27F6F12435274B003F32F4 /* OTPViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
-		DB27F6F22435274B003F32F4 /* UserDefaultExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultExtension.swift; sourceTree = "<group>"; };
-		DB27F6F32435274B003F32F4 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		DB27F6F42435274B003F32F4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DB27F6FB243529B4003F32F4 /* PasswordAutofill.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = PasswordAutofill.entitlements; sourceTree = "<group>"; };
 		DBC4DAB7243637C000BE5236 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		DBC4DAB924363FC000BE5236 /* SimpleSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleSignupViewController.swift; sourceTree = "<group>"; };
 		DBC4DABB24364FF100BE5236 /* CompletionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletionViewController.swift; sourceTree = "<group>"; };
+		DBC4DABD24365A4B00BE5236 /* ComplexSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplexSignupViewController.swift; sourceTree = "<group>"; };
+		DBC4DABF2436689300BE5236 /* SimpleLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleLoginViewController.swift; sourceTree = "<group>"; };
+		DBC4DAC02436689300BE5236 /* SimpleChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleChangePasswordViewController.swift; sourceTree = "<group>"; };
+		DBC4DAC12436689300BE5236 /* ComplexChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplexChangePasswordViewController.swift; sourceTree = "<group>"; };
+		DBC4DAC6243669E900BE5236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DBC4DAC824366FD700BE5236 /* UserDefaultExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,20 +114,18 @@
 		DB27F6BE24350CEC003F32F4 /* PasswordAutofill */ = {
 			isa = PBXGroup;
 			children = (
+				DBC4DAC824366FD700BE5236 /* UserDefaultExtension.swift */,
+				DBC4DAC5243669E900BE5236 /* Main.storyboard */,
+				DBC4DAC12436689300BE5236 /* ComplexChangePasswordViewController.swift */,
+				DBC4DAC02436689300BE5236 /* SimpleChangePasswordViewController.swift */,
+				DBC4DABF2436689300BE5236 /* SimpleLoginViewController.swift */,
+				DBC4DABD24365A4B00BE5236 /* ComplexSignupViewController.swift */,
 				DBC4DABB24364FF100BE5236 /* CompletionViewController.swift */,
 				DBC4DAB924363FC000BE5236 /* SimpleSignupViewController.swift */,
 				DBC4DAB7243637C000BE5236 /* MenuViewController.swift */,
 				DB27F6FB243529B4003F32F4 /* PasswordAutofill.entitlements */,
-				DB27F6F02435274B003F32F4 /* ChangePasswordViewController.swift */,
-				DB27F6EF2435274B003F32F4 /* HomeViewController.swift */,
-				DB27F6F42435274B003F32F4 /* LoginViewController.swift */,
-				DB27F6F12435274B003F32F4 /* OTPViewController.swift */,
-				DB27F6F32435274B003F32F4 /* SignUpViewController.swift */,
-				DB27F6F22435274B003F32F4 /* UserDefaultExtension.swift */,
 				DB27F6BF24350CEC003F32F4 /* AppDelegate.swift */,
 				DB27F6C124350CEC003F32F4 /* SceneDelegate.swift */,
-				DB27F6C324350CEC003F32F4 /* ViewController.swift */,
-				DB27F6C524350CEC003F32F4 /* Main.storyboard */,
 				DB27F6C824350CED003F32F4 /* Assets.xcassets */,
 				DB27F6CA24350CED003F32F4 /* LaunchScreen.storyboard */,
 				DB27F6CD24350CED003F32F4 /* Info.plist */,
@@ -261,9 +255,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBC4DAC7243669E900BE5236 /* Main.storyboard in Resources */,
 				DB27F6CC24350CED003F32F4 /* LaunchScreen.storyboard in Resources */,
 				DB27F6C924350CED003F32F4 /* Assets.xcassets in Resources */,
-				DB27F6C724350CEC003F32F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,18 +282,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB27F6FA2435274B003F32F4 /* LoginViewController.swift in Sources */,
+				DBC4DAC924366FD700BE5236 /* UserDefaultExtension.swift in Sources */,
 				DBC4DAB8243637C000BE5236 /* MenuViewController.swift in Sources */,
 				DBC4DABC24364FF100BE5236 /* CompletionViewController.swift in Sources */,
-				DB27F6F82435274B003F32F4 /* UserDefaultExtension.swift in Sources */,
-				DB27F6F72435274B003F32F4 /* OTPViewController.swift in Sources */,
-				DB27F6F92435274B003F32F4 /* SignUpViewController.swift in Sources */,
+				DBC4DAC22436689300BE5236 /* SimpleLoginViewController.swift in Sources */,
 				DBC4DABA24363FC000BE5236 /* SimpleSignupViewController.swift in Sources */,
-				DB27F6C424350CEC003F32F4 /* ViewController.swift in Sources */,
 				DB27F6C024350CEC003F32F4 /* AppDelegate.swift in Sources */,
+				DBC4DAC42436689300BE5236 /* ComplexChangePasswordViewController.swift in Sources */,
+				DBC4DAC32436689300BE5236 /* SimpleChangePasswordViewController.swift in Sources */,
 				DB27F6C224350CEC003F32F4 /* SceneDelegate.swift in Sources */,
-				DB27F6F62435274B003F32F4 /* ChangePasswordViewController.swift in Sources */,
-				DB27F6F52435274B003F32F4 /* HomeViewController.swift in Sources */,
+				DBC4DABE24365A4B00BE5236 /* ComplexSignupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,20 +327,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DB27F6C524350CEC003F32F4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DB27F6C624350CEC003F32F4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DB27F6CA24350CED003F32F4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DB27F6CB24350CED003F32F4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DBC4DAC5243669E900BE5236 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBC4DAC6243669E900BE5236 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

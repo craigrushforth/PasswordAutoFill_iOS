@@ -1,5 +1,5 @@
 //
-//  SimpleSignupViewController.swift
+//  ComplexSignupViewController.swift
 //  PasswordAutofill
 //
 //  Created by Craig Rushforth on 2020-04-01.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SimpleSignupViewController: UIViewController {
+class ComplexSignupViewController: UIViewController {
 
     enum Constants {
         static let passwordRuleDescription = "required: lower; required: upper; required: digit; minlength: 8; maxlength: 16;"
@@ -38,6 +38,28 @@ class SimpleSignupViewController: UIViewController {
         return stackview
     }()
 
+    private lazy var firstNameTextField: UITextField = {
+        let textField = UITextField(frame: .zero)
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.keyboardType = .default
+        textField.borderStyle = .roundedRect
+        textField.backgroundColor = .white
+        textField.placeholder = "Firstname"
+        textField.textContentType = .givenName
+        return textField
+    }()
+
+    private lazy var lastNameTextField: UITextField = {
+        let textField = UITextField(frame: .zero)
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.keyboardType = .default
+        textField.borderStyle = .roundedRect
+        textField.backgroundColor = .white
+        textField.placeholder = "Lastname"
+        textField.textContentType = .familyName
+        return textField
+    }()
+
     private lazy var usernameTextField: UITextField = {
         let textField = UITextField(frame: .zero)
         textField.translatesAutoresizingMaskIntoConstraints = false
@@ -61,6 +83,18 @@ class SimpleSignupViewController: UIViewController {
         return textField
     }()
 
+    private lazy var confirmPasswordTextField: UITextField = {
+        let textField = UITextField(frame: .zero)
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        textField.passwordRules = UITextInputPasswordRules(descriptor: Constants.passwordRuleDescription)
+        textField.borderStyle = .roundedRect
+        textField.backgroundColor = .white
+        textField.placeholder = "Confirm Password"
+        textField.isSecureTextEntry = true
+        textField.textContentType = .newPassword
+        return textField
+    }()
+    
     private lazy var createAccountButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -72,7 +106,7 @@ class SimpleSignupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Simple Signup"
+        title = "Complex Signup"
         view.backgroundColor = .white
         
         setupViews()
@@ -83,8 +117,11 @@ class SimpleSignupViewController: UIViewController {
         view.addSubview(scrollView)
         scrollView.addSubview(stackView)
 
+        stackView.addArrangedSubview(firstNameTextField)
+        stackView.addArrangedSubview(lastNameTextField)
         stackView.addArrangedSubview(usernameTextField)
         stackView.addArrangedSubview(passwordTextField)
+        stackView.addArrangedSubview(confirmPasswordTextField)
         stackView.addArrangedSubview(createAccountButton)
     }
     

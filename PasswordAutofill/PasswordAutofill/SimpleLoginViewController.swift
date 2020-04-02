@@ -1,5 +1,5 @@
 //
-//  SimpleSignupViewController.swift
+//  SimpleLoginViewController.swift
 //  PasswordAutofill
 //
 //  Created by Craig Rushforth on 2020-04-01.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SimpleSignupViewController: UIViewController {
+class SimpleLoginViewController: UIViewController {
 
     enum Constants {
         static let passwordRuleDescription = "required: lower; required: upper; required: digit; minlength: 8; maxlength: 16;"
@@ -46,6 +46,7 @@ class SimpleSignupViewController: UIViewController {
         textField.backgroundColor = .white
         textField.placeholder = "Username"
         textField.textContentType = .username
+        textField.text = UserDefaults.standard.username
         return textField
     }()
 
@@ -57,22 +58,22 @@ class SimpleSignupViewController: UIViewController {
         textField.backgroundColor = .white
         textField.placeholder = "Password"
         textField.isSecureTextEntry = true
-        textField.textContentType = .newPassword
+        textField.textContentType = .password
         return textField
     }()
 
-    private lazy var createAccountButton: UIButton = {
+    private lazy var loginButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Create Account", for: .normal)
-        button.addTarget(self, action: #selector(createAccountAction), for: .touchUpInside)
+        button.setTitle("Login", for: .normal)
+        button.addTarget(self, action: #selector(loginAction), for: .touchUpInside)
         return button
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Simple Signup"
+        title = "Simple Login"
         view.backgroundColor = .white
         
         setupViews()
@@ -85,13 +86,13 @@ class SimpleSignupViewController: UIViewController {
 
         stackView.addArrangedSubview(usernameTextField)
         stackView.addArrangedSubview(passwordTextField)
-        stackView.addArrangedSubview(createAccountButton)
+        stackView.addArrangedSubview(loginButton)
     }
     
     private func setupConstraints() {
         
         NSLayoutConstraint.activate([
-            createAccountButton.heightAnchor.constraint(equalToConstant: CGFloat(48)),
+            loginButton.heightAnchor.constraint(equalToConstant: CGFloat(48)),
         ])
         
         NSLayoutConstraint.activate([
@@ -111,16 +112,16 @@ class SimpleSignupViewController: UIViewController {
     }
     
     @objc
-    func createAccountAction(sender: UIButton!) {
+    func loginAction(sender: UIButton!) {
         // Store user name in user defaults
         UserDefaults.standard.username = usernameTextField.text
         
         let viewController = CompletionViewController()
         
-        let title = "Account Created!"
+        let title = "Logged in!"
         let username: String = usernameTextField.text ?? ""
         let password: String = passwordTextField.text ?? ""
-        let message = "Check your Settings -> Passwords & Accounts to verify everything was saved"
+        let message = "No changed should have been made to the Accounts & Passwords in the settings"
 
         let components = [title, "\n", "username: \(username)", "password: \(password)", "\n", message]
         
