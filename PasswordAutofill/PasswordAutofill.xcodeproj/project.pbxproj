@@ -21,6 +21,9 @@
 		DB27F6F82435274B003F32F4 /* UserDefaultExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27F6F22435274B003F32F4 /* UserDefaultExtension.swift */; };
 		DB27F6F92435274B003F32F4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27F6F32435274B003F32F4 /* SignUpViewController.swift */; };
 		DB27F6FA2435274B003F32F4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB27F6F42435274B003F32F4 /* LoginViewController.swift */; };
+		DBC4DAB8243637C000BE5236 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC4DAB7243637C000BE5236 /* MenuViewController.swift */; };
+		DBC4DABA24363FC000BE5236 /* SimpleSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC4DAB924363FC000BE5236 /* SimpleSignupViewController.swift */; };
+		DBC4DABC24364FF100BE5236 /* CompletionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC4DABB24364FF100BE5236 /* CompletionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		DB27F6F32435274B003F32F4 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		DB27F6F42435274B003F32F4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DB27F6FB243529B4003F32F4 /* PasswordAutofill.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = PasswordAutofill.entitlements; sourceTree = "<group>"; };
+		DBC4DAB7243637C000BE5236 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		DBC4DAB924363FC000BE5236 /* SimpleSignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleSignupViewController.swift; sourceTree = "<group>"; };
+		DBC4DABB24364FF100BE5236 /* CompletionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,9 @@
 		DB27F6BE24350CEC003F32F4 /* PasswordAutofill */ = {
 			isa = PBXGroup;
 			children = (
+				DBC4DABB24364FF100BE5236 /* CompletionViewController.swift */,
+				DBC4DAB924363FC000BE5236 /* SimpleSignupViewController.swift */,
+				DBC4DAB7243637C000BE5236 /* MenuViewController.swift */,
 				DB27F6FB243529B4003F32F4 /* PasswordAutofill.entitlements */,
 				DB27F6F02435274B003F32F4 /* ChangePasswordViewController.swift */,
 				DB27F6EF2435274B003F32F4 /* HomeViewController.swift */,
@@ -280,9 +289,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB27F6FA2435274B003F32F4 /* LoginViewController.swift in Sources */,
+				DBC4DAB8243637C000BE5236 /* MenuViewController.swift in Sources */,
+				DBC4DABC24364FF100BE5236 /* CompletionViewController.swift in Sources */,
 				DB27F6F82435274B003F32F4 /* UserDefaultExtension.swift in Sources */,
 				DB27F6F72435274B003F32F4 /* OTPViewController.swift in Sources */,
 				DB27F6F92435274B003F32F4 /* SignUpViewController.swift in Sources */,
+				DBC4DABA24363FC000BE5236 /* SimpleSignupViewController.swift in Sources */,
 				DB27F6C424350CEC003F32F4 /* ViewController.swift in Sources */,
 				DB27F6C024350CEC003F32F4 /* AppDelegate.swift in Sources */,
 				DB27F6C224350CEC003F32F4 /* SceneDelegate.swift in Sources */,
